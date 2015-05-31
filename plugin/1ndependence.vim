@@ -1,4 +1,4 @@
-if exists('g:loaded_1dependence')
+if exists('g:loaded_1ndependence')
     finish
 endif
 let g:loaded_1ndependence=1
