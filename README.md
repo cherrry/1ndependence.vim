@@ -2,7 +2,7 @@
 
 Simplified version of [vim-independence](https://github.com/AD7six/vim-independence), which always loads `.vimrc` from git root if exist.
 
-Plugin renamed to `1ndependence.vim` to make sure that this will get loaded before other plugins.
+Plugin renamed to `1ndependence.vim` to make sure that project's `.vimrc` will get loaded before loading other plugins (unless you got a plugin named `0h-no`).
 
 ## Installation
 
