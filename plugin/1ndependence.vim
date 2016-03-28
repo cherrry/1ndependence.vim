@@ -3,6 +3,10 @@ if exists('g:loaded_1ndependence')
 endif
 let g:loaded_1ndependence=1
 
+augroup Independence
+    au BufNewFile,BufRead * call s:LoadConfig()
+augroup END
+
 function s:LoadConfig()
     let l:path = fnameescape(expand("%:p:h"))
     let l:root = system("cd " . l:path . "; echo -n `git rev-parse --show-toplevel`")
@@ -15,7 +19,5 @@ function s:LoadConfig()
         exec ":source " . l:vimrc
     endif
 endfunction
-
-call s:LoadConfig()
 
 let g:loaded_1ndependence=2
